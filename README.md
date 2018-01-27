@@ -10,7 +10,7 @@
 # two documents: offline and online
 
 # detailed information can be downloaded from: http://rdatasciencecases.org/Data.html
-![SignalCounts](Geo_XYByCount.pdf?raw=true "SignalCounts")
+![SignalCounts](CountsofSignalsatEachLoc.png?raw=true "SignalCounts")
 
 # offline: training data set
 # offline: measured at 6 WiFi access points (routers)
