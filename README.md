@@ -1,6 +1,8 @@
 # Indoor_GPS
 # Predicting location via indoor positioning systems
 # Data science in R
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
+
 
 
 # Brief background information:
