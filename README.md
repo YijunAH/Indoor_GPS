@@ -26,12 +26,20 @@ In this study, part 1 and 2 focused on data cleaning and formating. We started w
 
 Fig. 4 Signal strength plotted against distance to mac. The signal strength decreases with the distance to mac increase
 
-Part 9 to part 10, via certain modification, we moved on to the online dataset (test dataset), modified it into the preferred dataframe format. Our goal was to built a prediction model using the signal strength in the online dataset to predict the corresponding X and Y position. Online dataset contains information measured at 60 radom locations.
+Part 9 to part 10, we moved on to the online dataset (test dataset). We modified it into a dataframe format we preferred. Our goal was to built a prediction model using the signal strength in the online dataset to predict corresponding X and Y position. Online dataset contains information measured at 60 radom locations.
 
-Part 11, through k-Nearest-Neighbour method, we built prediction model and tested 
+Part 11, through k-Nearest-Neighbour method, we built prediction model based on offline dataset and tested the model with the online dataset. We calculated the error in the model and further explored the number of nearby calibration points and number of nearby angles we need to include in the training model in order to get to minimize our estimation error.
+
+![SignalStrengthvsDist](SignalStrengthvsDist.png?raw=true "SignalStrengthvsDist")
+
+Fig. X Error against the number of nearby calibration points used in the training model.
+
+Fig. X Error against the number of nearby angles used in the training model.
 
 Part 12, we visulized final results by plotting the prediction X and Y location against actual X and Y location in the online dataset via ggplot2.
 
 ![SignalStrengthvsDist](SignalStrengthvsDist.png?raw=true "SignalStrengthvsDist")
 
-Fig X.
+Fig. X Floor map with actual position (solid black), estimated position (solid red) and calibration points (hollow grey circle)
+
+
