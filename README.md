@@ -30,15 +30,23 @@ Part 9 to part 10, we moved on to the online dataset (test dataset). We modified
 
 Part 11, through k-Nearest-Neighbour method, we built prediction model based on offline dataset and tested the model with the online dataset. We calculated the error in the model and further explored the number of nearby calibration points and number of nearby angles we need to include in the training model in order to get to minimize our estimation error.
 
-![SignalStrengthvsDist](SignalStrengthvsDist.png?raw=true "SignalStrengthvsDist")
+![NeighbourPrediction](NeighbourPrediction.png?raw=true "NeighbourPrediction")
+
 
 Fig. X Error against the number of nearby calibration points used in the training model.
 
+
+![AnglePrediction](AnglePrediction.png?raw=true "AnglePrediction")
+
+
 Fig. X Error against the number of nearby angles used in the training model.
+
 
 Part 12, we visulized final results by plotting the prediction X and Y location against actual X and Y location in the online dataset via ggplot2.
 
-![SignalStrengthvsDist](SignalStrengthvsDist.png?raw=true "SignalStrengthvsDist")
+
+![FloorMapPredictedActualLocs](FloorMapPredictedActualLocs.png?raw=true "FloorMapPredictedActualLocs")
+
 
 Fig. X Floor map with actual position (solid black), estimated position (solid red) and calibration points (hollow grey circle)
 
