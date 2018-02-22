@@ -8,19 +8,16 @@ Detailed information and dataset can be downloaded from: http://rdatasciencecase
 Fig.1 Signal strength heat map generated angle==0 and with mac=="00:0f:a3:39:e1:c0"
 
 Brief Background Information:
-data size: nearly one million measurements of signal/measurements
-two documents/datasets: offline(as the training set) and online (as the test set)
+Data size: nearly one million measurements of signal/measurements
+Data Structure: two documents/datasets: offline(as the training set) and online (as the test set)
 
-![SignalCounts](CountsofSignalsatEachLoc.png?raw=true "SignalCounts")
-
-Fig. 2 Counts of signals detected at each calibration points (red, labels shows the number of counts at each location)
-
-offline: signal strengths measured on a grid of 166 points spaced 1 meter apart in the hallways of one floor shown in the figure
 ![FloorMapandMac](CalibPointandMac.png?raw=true "FloorMapandMac")
 
-Fig. 3 Floor map with calibration points (red, 166 points in total) and router position (blacks, 6 routers in total)
+Fig. X Floor map with calibration points (red, 166 points in total, spaced 1 meter apart in the hallways of one floor) and router position (black, 6 routers in total).
 
-In this study, part 1 and 2 focused on data cleaning and formating. We started with offline dataset and formated it into a clean and organized dataframe. Part 3 to part 8 looked at different variables, orientation, mac address, X and Y position, distance to router and their effect towards signal strength.
+I have two RMD files in this repository. The one named "XXXX" is the one with all my comments and graphs. The one named "XXX" is a 'cleaned ' version of the previous one. It only has all the required lines to run the final position prediction estimation, without any comments or graphs.
+
+In '', I divided this study into 12 parts in total. Part 1 and 2 focused on data cleaning and formating. We started with playing with the offline dataset and formated it into a clean and organized dataframe. From part 3 to part 8, we looked at different variables, orientation, mac address, X and Y position, distance to router and their effect towards signal strength.
 
 ![SignalStrengthvsDist](SignalStrengthvsDist.png?raw=true "SignalStrengthvsDist")
 
@@ -49,5 +46,3 @@ Part 12, we visulized final results by plotting the prediction X and Y location 
 
 
 Fig. X Floor map with actual position (solid black), estimated position (solid red) and calibration points (hollow grey circle)
-
-
