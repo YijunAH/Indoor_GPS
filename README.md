@@ -5,7 +5,7 @@ Please wait for figures to show up
 This example is taken from: Chapter 1 Predicting Location via Indoor Positioning Systems from the book: Case Studies in Data Science with R by Deborah Nolan, University of California, Berkeley and Duncan Temple Lang, University of California, Davis.
 Detailed information and data files can be downloaded from: http://rdatasciencecases.org/Data.html
 
-![Heatmap1](Heatmap1.png?raw=true "FirstHeatmap")
+![Heatmap1](doc/Heatmap1.png?raw=true "FirstHeatmap")
 Fig.1 Signal strength heat map generated @angle==0 with mac=="00:0f:a3:39:e1:c0"
 
 Brief Background Information about this dataset:
