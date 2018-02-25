@@ -1,21 +1,25 @@
-Predicting location via indoor positioning systems
+# Predicting location via indoor positioning systems
 
-Please wait for figures to show up
+(Please wait a few seconds for figures to show up)
 
-This example is taken from: Chapter 1 Predicting Location via Indoor Positioning Systems from the book: Case Studies in Data Science with R by Deborah Nolan, University of California, Berkeley and Duncan Temple Lang, University of California, Davis.
-Detailed information and data files can be downloaded from: http://rdatasciencecases.org/Data.html
+# General Background/Research Purpose
+
+
 
 ![Heatmap1](doc/Heatmap1.png?raw=true "FirstHeatmap")
 
 Fig.1 Signal strength heat map generated @angle==0 with mac=="00:0f:a3:39:e1:c0"
 
-Brief Background Information about this dataset:
+# Brief Background Information about the datasets
+
 Data size: nearly one million measurements of signal/rows
 Data structure: two documents/datasets: offline(as the training set) and online (as the test set)
 
 ![FloorMapandMac](doc/CalibPointandMac.png?raw=true "FloorMapandMac")
 
 Fig. 2 Floor map with calibration points (red point, 166 points in total, spaced 1 meter apart in the hallways of one floor) and mac position (black point, 6 routers in total).
+
+# Data Analysis (Code and Graph)
 
 I have two RMD files in this repository. The one named "XXXX" is the one with all my comments and graphs. The one named "XXX" is a 'cleaned' version of the previous one. It only has all the required lines to run the final position prediction estimation, without any comments or graphs.
 
@@ -42,3 +46,10 @@ In part 12, we visualized final result by plotting the prediction X and Y locati
 ![FloorMapPredictedActualLocs](doc/FloorMapPredictedActualLocs.png?raw=true "FloorMapPredictedActualLocs")
 
 Fig. X Floor map with actual position (solid black), estimated position (solid red) and calibration points (hollow grey circle)
+
+# Conclusions
+
+# References
+
+This example is taken from: Chapter 1 Predicting Location via Indoor Positioning Systems from the book: Case Studies in Data Science with R by Deborah Nolan, University of California, Berkeley and Duncan Temple Lang, University of California, Davis.
+Detailed information and data files can be downloaded from: http://rdatasciencecases.org/Data.html
