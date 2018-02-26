@@ -5,7 +5,7 @@ Using signals collected from hand-held device to predict indoor position
 
 # General Background/Research Purpose
 
-
+The idea of tracking people and item acurately inside houses, stores, schools and offices attracted so many research interests these days due to the exponential growth of wireless networking. Indoor positioning systems can unitize WiFi signals detected from routers to make this idea come true.
 
 ![Heatmap1](doc/Heatmap1.png?raw=true "FirstHeatmap")
 
