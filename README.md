@@ -1,7 +1,7 @@
 # Predicting location via indoor positioning systems
 
 (Please wait a few seconds for figures to show up)
-Using signals collected from hand-held device to predict indoor position
+Using signals collected from hand-held device to predict indoor position via k-Nearest-Neighbour(KNN) method
 
 # General Background/Research Purpose
 
@@ -14,8 +14,10 @@ Fig.1 Signal strength heat map generated @angle==0 with mac=="00:0f:a3:39:e1:c0"
 # Brief Background Information about the datasets
 
 Data size: nearly one million measurements of signal/rows
-Data structure: two documents/datasets: offline(as the training set) and online (as the test set)
-Goal: using signals collected at 166 calibration points in offline dataset to get a training model and predict the 60 random selected position in online dataset (Floor map is shown in Fig. 2 below)
+Data structure: 
+  two documents/datasets: offline(as the training set) and online (as the test set)
+  both in txt format, converted them to dataframe
+Goal: using signals collected at 166 calibration points in offline dataset to get a training model (via k-Nearest-Neighbour method, KNN) and predict the 60 random selected position in online dataset (Floor map is shown in Fig. 2 below)
 
 ![FloorMapandMac](doc/CalibPointandMac.png?raw=true "FloorMapandMac")
 
@@ -23,9 +25,9 @@ Fig. 2 Floor map with calibration points (red point, 166 points in total, spaced
 
 # Data Analysis Method
 
-I have two RMD files in this repository. The one named "XXXX" is the one with all my comments and graphs. The one named "XXX" is a 'cleaned' version of the previous one. It only has all the required lines to run the final position prediction estimation, without any comments or graphs.
+I have two RMD files in this repository. The one named "IndoorPositionSys_Main.R" is the one with all my comments and graphs. The one named "IndoorPositionSys_NoComment.R" is a 'cleaned' version of the previous one. It only has all the required lines to run the final position prediction estimation, without any comments or graphs.
 
-In '', I divided this study into 12 parts/sections. Part 1 and 2 focused on data cleaning and formating. We started with playing with the offline dataset and formated it from txt into a clean and organized dataframe. From part 3 to part 8, we looked at different variables, orientation, mac address, X and Y position, distance to mac and their effect towards signal strength.
+In 'IndoorPositionSys_Main.R', I divided this study into 12 parts/sections. Part 1 and 2 focused on data cleaning and formating. We started with playing with the offline dataset and formated it from txt into a clean and organized dataframe. From part 3 to part 8, we looked at different variables, orientation, mac address, X and Y position, distance to mac and their effect towards signal strength.
 
 ![SignalStrengthvsDist](doc/SignalStrengthvsDist.png?raw=true "SignalStrengthvsDist")
 
@@ -51,7 +53,9 @@ Fig. 6 Floor map with actual position (solid black), estimated position (solid r
 
 # Conclusions
 
-In this study, we formatted offline and online dataset into clean, manageable dataframes. We looked at different variables which affect signal strength and plotted these findings via ggplot2. Using k-Nearest-Neighbour method, we built prediction model based on offline and tested the model with the online. We found out we can minimize calculation error by employ 5 nearest calibration points and 3 angles into the training model.
+In this study, we formatted offline and online from txt into clean, manageable dataframes. We looked at different variables which affect signal strength and plotted these findings via ggplot2. Using k-Nearest-Neighbour method, we built prediction model based on offline and tested the model with the online. We found out we can minimize calculation error by employ 5 nearest calibration points and 3 angles into the training model.
+
+In src folder, in 'Predictionwith5mac.R', I looked at the possibility of using signals from only 5 macs to predict indoor locations. Comparing with the previous results, which use 6 macs, 5 macs do create more errors. We can minimize calculation error by employ 14 calibration points and 3 angles into our training model.
 
 # References
 
